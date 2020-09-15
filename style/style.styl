@@ -1,0 +1,56 @@
+// Un círculo cromático hecho con CSS en forma animada
+
+// Normalizando 
+@import 'normalize.styl'
+@import 'funciones'
+@import 'node_modules/nib/index'
+
+// Variables
+$color_texto = rgb(23,87,251)
+$color_fondo = #222
+$color_titular = rgba(82,200,195, 0.7)
+$letra_texto = 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+$letra_titular = Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+$borde = 1px solid #333
+$negro = #000
+
+body
+    background $color_fondo
+    color #aaaaaa
+    font-family $letra_texto
+    font-size 130%
+    padding 0.5em
+
+article
+    line-height: 150%
+    
+a
+    color: $color_texto
+
+
+h1, h2, h3, h4
+    color $color_titular
+    font-family $letra_titular
+
+li
+    list-style "-  "
+    margin 1rem auto
+
+footer
+section
+    padding-bottom 0.5em
+    padding-top 0.5em
+    border-top $borde
+    box-shadow 0px -1px 0px $negro
+
+@media all and (min-width 720px)
+    body
+        font-size 150%
+    
+    article
+        column-count: 2
+        column-gap: 2em
+        
+        p
+            margin-top 0
+            margin-bottom: 2em
