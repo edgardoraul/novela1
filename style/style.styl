@@ -8,11 +8,19 @@
 // Variables
 $color_texto = rgb(23,87,251)
 $color_fondo = #222
+$color_enlace = rgb(231,34,65)
 $color_titular = rgba(82,200,195, 0.7)
 $letra_texto = 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 $letra_titular = Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 $borde = 1px solid #333
 $negro = #000
+
+a
+    text-decoration none
+
+    &:hover
+        text-decoration underline
+        color $color_enlace
 
 body
     background $color_fondo

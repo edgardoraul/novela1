@@ -485,6 +485,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #e72241;
+}
 body {
   background: #222;
   color: #aaa;
